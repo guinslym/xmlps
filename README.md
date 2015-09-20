@@ -144,6 +144,11 @@ After a successful installation the unit tests should complete without errors:
 ```
 # ./unittest.sh
 ```
+Start PHP 5.4+ built-in server
+```
+cd public
+php -S localhost:8888
+```
 
 You will need to re-empty the cache directories afterward, if your Web server runs as a different user than you.
 

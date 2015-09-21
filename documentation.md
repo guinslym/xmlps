@@ -1,3 +1,6 @@
+##Documentation
+
+```
 $ tree -tL 2 > totrash.txt
 
 
@@ -82,3 +85,23 @@ $ tree -tL 2 > totrash.txt
 
 todo:
 Look at composer.json and go to each github repositories
+```
+-----------
+Documentation to install xmlp
+
+1. 	go to github and follow the instructions
+2. 	php -S 0.0.0.0:8080 -t public/ public/index.php 
+
+
+-----------
+Documentation to install ZendFramework 2
+
+```
+mkdir new_directory
+composer create-project -n -sdev zendframework/skeleton-application path/to/new_directory
+curl -s https://getcomposer.org/installer | php 
+php composer.phar require coolcsn/csn-user:0.1.0
+
+```
+
+#####https://www.youtube.com/watch?v=L29onMRiP3U 8:42

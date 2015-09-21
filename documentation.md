@@ -90,6 +90,7 @@ Look at composer.json and go to each github repositories
 Documentation to install xmlp
 
 1. 	go to github and follow the instructions
+2.  You might need about 400 mb to install everything
 2. 	php -S 0.0.0.0:8080 -t public/ public/index.php 
 
 

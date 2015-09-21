@@ -106,7 +106,7 @@ php composer.phar require coolcsn/csn-user:0.1.0
 ```
 #####Database
 1. 	mysql -u root -p
-2. Create DATABASES helloworld;
-3. Zend set up the database authentification
+2. 	CREATE DATABASE HelloWorld;
+3. 	Zend set up the database authentification
 
 #####https://www.youtube.com/watch?v=L29onMRiP3U 8:42

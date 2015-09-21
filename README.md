@@ -148,6 +148,8 @@ Start PHP 5.4+ built-in server
 ```
 cd public
 php -S localhost:8888
+#or
+php -S 0.0.0.0:8080 -t public/ public/index.php
 ```
 
 You will need to re-empty the cache directories afterward, if your Web server runs as a different user than you.

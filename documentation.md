@@ -104,9 +104,27 @@ curl -s https://getcomposer.org/installer | php
 php composer.phar require coolcsn/csn-user:0.1.0
 
 ```
+####Install Doctrine
+```
+#not necessary with csn-user
+php composer.phar require doctrine/doctrine-orm-module
+```
+
 #####Database
 1. 	mysql -u root -p
 2. 	CREATE DATABASE HelloWorld;
 3. 	Zend set up the database authentification
+4.  cp vendor/coolcsn/csn-user/config/doctrineorm.local.php.dist config/autoload/doctrineorm.local.php
+5. 	vim config/autoload/doctrineorm.local.php  #database auth
+4.  ./vendor/bin/doctrine-module orm:schema-tool:create #migration
+6. 	mysql -u username -p database_name < file.sql
+7.  (mysql) show tables;
 
+
+####Mail configuration
+1. 	cp vendor/coolcsn/csn-user/config/gmailExample-mail.config.local.php.dist config/autoload/mail.config.local.php
+
+####Changing Salt
+2.  cp vendor/coolcsn/csn-user/config/csnuser.global.php.dist config/autoload/csnuser.global.php  
+3.
 #####https://www.youtube.com/watch?v=L29onMRiP3U 8:42
